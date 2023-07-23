@@ -1,16 +1,32 @@
+<!--
+ * @Author: 徐腾龙
+ * @Date: 2023-07-07 10:28:52
+ * @LastEditors: 徐腾龙
+ * @LastEditTime: 2023-07-20 10:29:47
+ * @Description: 
+ * @FilePath: \v2demo\src\views\home\HomeView.vue
+-->
 <template>
   <div class="container-home">
-    <Drag>
+    <deal-time></deal-time>
+    <Lodash />
+    <!-- <Drag>
       <div class="content">
         <h1 class="noselect">Drag Me!</h1>
-        <!-- <a-button type="primary">ClickMe</a-button> -->
+        <a-button type="primary">ClickMe</a-button>
       </div>
-    </Drag>
+    </Drag> -->
   </div>
 </template>
 
 <script>
+import DealTime from '@/views/home/components/DealTime'
+import Lodash from './components/Lodash.vue'
 export default {
+  components: {
+    DealTime,
+    Lodash
+  },
   methods: {
     handleTouchStart(event) {
       console.log("touchstart");

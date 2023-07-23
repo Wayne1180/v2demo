@@ -2,21 +2,20 @@
  * @Author: 徐腾龙
  * @Date: 2023-07-07 10:28:52
  * @LastEditors: 徐腾龙
- * @LastEditTime: 2023-07-07 14:22:34
+ * @LastEditTime: 2023-07-10 12:24:17
  * @Description: 
  * @FilePath: \v2demo\src\router\index.js
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'map',
-    component: () => import('@/views/Map/index.vue')
+    name: 'home',
+    component: () => import('@/views/home/HomeView.vue')
   },
   {
     path: '/about',
