@@ -2,20 +2,20 @@
  * @Author: 徐腾龙
  * @Date: 2023-07-07 10:28:52
  * @LastEditors: 徐腾龙
- * @LastEditTime: 2023-07-20 10:29:47
+ * @LastEditTime: 2023-08-07 09:27:12
  * @Description: 
  * @FilePath: \v2demo\src\views\home\HomeView.vue
 -->
 <template>
   <div class="container-home">
-    <deal-time></deal-time>
-    <Lodash />
+    <!-- <deal-time></deal-time>
+    <Lodash />-->
     <!-- <Drag>
       <div class="content">
         <h1 class="noselect">Drag Me!</h1>
         <a-button type="primary">ClickMe</a-button>
       </div>
-    </Drag> -->
+    </Drag>-->
   </div>
 </template>
 
@@ -28,10 +28,10 @@ export default {
     Lodash
   },
   methods: {
-    handleTouchStart(event) {
+    handleTouchStart (event) {
       console.log("touchstart");
     },
-    handleTouchEnd(e) {
+    handleTouchEnd (e) {
       console.log(e);
     },
   },
@@ -44,7 +44,7 @@ export default {
   width: 100vw;
   height: 100%;
   background-image: linear-gradient(0deg, #6a85b6 0%, #bac8e0 100%);
-  .content {
+  /* .content {
     text-align: center;
     line-height: 300px;
     width: 300px;
@@ -66,6 +66,6 @@ export default {
       -webkit-touch-callout: none;
       -khtml-user-select: none;
     }
-  }
+  } */
 }
 </style>
