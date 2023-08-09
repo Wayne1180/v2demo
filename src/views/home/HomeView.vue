@@ -1,37 +1,51 @@
 <!--
  * @Author: 徐腾龙
+ * @Date: 2023-07-23 15:22:16
+ * @LastEditors: 徐腾龙
+ * @LastEditTime: 2023-08-09 23:20:25
+ * @Description: 
+ * @FilePath: \v2demo\src\views\home\HomeView.vue
+-->
+<!--
+ * @Author: 徐腾龙
  * @Date: 2023-07-07 10:28:52
  * @LastEditors: 徐腾龙
- * @LastEditTime: 2023-07-20 10:29:47
+ * @LastEditTime: 2023-07-23 15:27:47
  * @Description: 
  * @FilePath: \v2demo\src\views\home\HomeView.vue
 -->
 <template>
   <div class="container-home">
-    <deal-time></deal-time>
-    <Lodash />
+    <info></info>
+    <!-- <deal-time></deal-time> -->
+    <!-- <Lodash /> -->
+    <!-- <Transi></Transi> -->
     <!-- <Drag>
       <div class="content">
         <h1 class="noselect">Drag Me!</h1>
         <a-button type="primary">ClickMe</a-button>
       </div>
-    </Drag> -->
+    </Drag>-->
   </div>
 </template>
 
 <script>
 import DealTime from '@/views/home/components/DealTime'
 import Lodash from './components/Lodash.vue'
+import Transi from './components/Transition.vue';
+import Info from './components/Info.vue';
 export default {
   components: {
     DealTime,
-    Lodash
+    Lodash,
+    Transi,
+    Info
   },
   methods: {
-    handleTouchStart(event) {
+    handleTouchStart (event) {
       console.log("touchstart");
     },
-    handleTouchEnd(e) {
+    handleTouchEnd (e) {
       console.log(e);
     },
   },
