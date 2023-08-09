@@ -11,6 +11,7 @@
  * @Date: 2023-07-07 10:28:52
  * @LastEditors: 徐腾龙
  * @LastEditTime: 2023-07-23 15:27:47
+ * @LastEditTime: 2023-08-07 09:27:12
  * @Description: 
  * @FilePath: \v2demo\src\views\home\HomeView.vue
 -->
@@ -20,6 +21,8 @@
     <!-- <deal-time></deal-time> -->
     <!-- <Lodash /> -->
     <!-- <Transi></Transi> -->
+    <!-- <deal-time></deal-time>
+    <Lodash />-->
     <!-- <Drag>
       <div class="content">
         <h1 class="noselect">Drag Me!</h1>
@@ -58,7 +61,7 @@ export default {
   width: 100vw;
   height: 100%;
   background-image: linear-gradient(0deg, #6a85b6 0%, #bac8e0 100%);
-  .content {
+  /* .content {
     text-align: center;
     line-height: 300px;
     width: 300px;
@@ -80,6 +83,6 @@ export default {
       -webkit-touch-callout: none;
       -khtml-user-select: none;
     }
-  }
+  } */
 }
 </style>
