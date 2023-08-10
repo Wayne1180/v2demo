@@ -2,7 +2,7 @@
  * @Author: 徐腾龙
  * @Date: 2023-07-23 15:22:16
  * @LastEditors: 徐腾龙
- * @LastEditTime: 2023-08-09 23:20:25
+ * @LastEditTime: 2023-08-10 19:41:40
  * @Description: 
  * @FilePath: \v2demo\src\views\home\HomeView.vue
 -->
@@ -17,7 +17,8 @@
 -->
 <template>
   <div class="container-home">
-    <info></info>
+    <fold></fold>
+    <!-- <info></info> -->
     <!-- <deal-time></deal-time> -->
     <!-- <Lodash /> -->
     <!-- <Transi></Transi> -->
@@ -33,6 +34,7 @@
 </template>
 
 <script>
+import Fold from './components/Fold.vue'
 import DealTime from '@/views/home/components/DealTime'
 import Lodash from './components/Lodash.vue'
 import Transi from './components/Transition.vue';
@@ -42,7 +44,8 @@ export default {
     DealTime,
     Lodash,
     Transi,
-    Info
+    Info,
+    Fold
   },
   methods: {
     handleTouchStart (event) {
