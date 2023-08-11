@@ -2,7 +2,7 @@
  * @Author: 徐腾龙
  * @Date: 2023-07-07 10:28:52
  * @LastEditors: 徐腾龙
- * @LastEditTime: 2023-07-10 12:24:17
+ * @LastEditTime: 2023-08-07 09:37:18
  * @Description: 
  * @FilePath: \v2demo\src\router\index.js
  */
@@ -15,7 +15,13 @@ const routes = [
   {
     path: '/',
     name: 'home',
+    redirect: '/pixi',
     component: () => import('@/views/home/HomeView.vue')
+  },
+  {
+    path: '/pixi',
+    name: 'pixi',
+    component: () => import('@/views/Pixi/index.vue')
   },
   {
     path: '/about',
