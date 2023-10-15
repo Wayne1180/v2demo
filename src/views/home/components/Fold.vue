@@ -2,7 +2,7 @@
  * @Author: 徐腾龙
  * @Date: 2023-08-10 19:33:27
  * @LastEditors: 徐腾龙
- * @LastEditTime: 2023-08-10 21:39:00
+ * @LastEditTime: 2023-09-24 13:59:17
  * @Description: 
  * @FilePath: \v2demo\src\views\home\components\Fold.vue
 -->
@@ -15,7 +15,7 @@
     <transition name="scale">
       <div v-if="!isCollapse" class="container__list">
         <div v-for="(item, index) in list" :key="index">
-          <span class="label">{{ item.name }}</span>
+          <span class="label">{{ item?.name }}</span>
           <span class="value">{{ item.path }}</span>
         </div>
       </div>
