@@ -2,7 +2,7 @@
  * @Author: 徐腾龙
  * @Date: 2023-07-23 15:22:16
  * @LastEditors: 徐腾龙
- * @LastEditTime: 2023-10-15 10:37:30
+ * @LastEditTime: 2023-10-15 11:14:19
  * @Description: 
  * @FilePath: \v2demo\src\views\home\HomeView.vue
 -->
@@ -17,7 +17,8 @@
 -->
 <template>
   <div class="container-home">
-    <img-property></img-property>
+    <overflow-demo></overflow-demo>
+    <!-- <img-property></img-property> -->
     <!-- <arrow></arrow> -->
     <!-- <fold></fold>
     <warn-info></warn-info>-->
@@ -45,6 +46,7 @@ import Lodash from './components/Lodash.vue'
 import Transi from './components/Transition.vue';
 import Info from './components/Info.vue';
 import WarnInfo from './components/WarnInfo.vue';
+import OverflowDemo from './components/OverflowDemo.vue';
 export default {
   components: {
     ImgProperty,
@@ -54,7 +56,8 @@ export default {
     Info,
     Fold,
     WarnInfo,
-    Arrow
+    Arrow,
+    OverflowDemo
   },
   mounted () {
     this.handleDealObj()
